@@ -1,7 +1,7 @@
 export const loadUsers = () => {
   return (dispatch) => {
     dispatch({ type: 'users/load/start' });
-    fetch('http://localhost:8000/users')
+    fetch('/users')
       .then((res) => res.json())
       .then((json) => {
         dispatch({

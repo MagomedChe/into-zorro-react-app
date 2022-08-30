@@ -1,10 +1,10 @@
 # **Сайт Ресторанов и Кафе.**
 
-Это групповой проект, выполненный студентами школы программирования [intocode.ru](https://intocode.ru/)
+Командный проект.
 
 
 
-[Сайт проекта](https://whispering-castle-10972.herokuapp.com/)
+[Сайт проекта](https://into-zorro-app.herokuapp.com/)
 
 
 

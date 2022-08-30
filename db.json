@@ -80,8 +80,8 @@
       "id": 7
     },
     {
-      "cafeId": 6,
-      "rating": 2,
+      "cafeId": 1,
+      "rating": 4,
       "id": 8
     }
   ],
@@ -234,38 +234,6 @@
       "positive": true,
       "date": "29.07.2021",
       "id": 1
-    },
-    {
-      "userId": 2,
-      "cafeId": 1,
-      "text": "ыыыы",
-      "positive": false,
-      "date": "29.07.2021",
-      "id": 2
-    },
-    {
-      "userId": 2,
-      "cafeId": 1,
-      "text": "sssss",
-      "positive": true,
-      "date": "29.07.2021",
-      "id": 3
-    },
-    {
-      "userId": 2,
-      "cafeId": 1,
-      "text": "sssss",
-      "positive": false,
-      "date": "29.07.2021",
-      "id": 4
-    },
-    {
-      "userId": 2,
-      "cafeId": 1,
-      "text": "ssss",
-      "positive": true,
-      "date": "29.07.2021",
-      "id": 5
     }
   ]
 }

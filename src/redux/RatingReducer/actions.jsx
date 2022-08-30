@@ -2,7 +2,7 @@ export const loadRatings = () => {
   return (dispatch) => {
     dispatch({ type: 'rating/load/start' });
 
-    fetch('http://localhost:8000/Rating')
+    fetch('/Rating')
       .then((response) => response.json())
       .then((json) => {
         dispatch({
@@ -18,7 +18,7 @@ export const postRating = (id, rating) => {
     dispatch({
       type: 'rating/send/start',
     });
-    fetch('http://localhost:8000/Rating', {
+    fetch('/Rating', {
       method: 'POST',
       body: JSON.stringify({
         cafeId: id,

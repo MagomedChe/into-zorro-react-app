@@ -1,7 +1,7 @@
 export const addReview = (text, userId, id, positive,authUserId) => {
   return (dispatch) => {
     dispatch({ type: 'review/add/start' });
-    fetch(`http://localhost:8000/reviews`, {
+    fetch(`/reviews`, {
       method: 'POST',
       body: JSON.stringify({
         userId: authUserId,

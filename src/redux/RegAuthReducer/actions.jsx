@@ -2,7 +2,7 @@ export const startLogin = (login, password, history) => {
   return (dispatch) => {
     dispatch({ type: 'auth/login/start' });
 
-    fetch('http://localhost:8000/auth', {
+    fetch('/auth', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -51,7 +51,7 @@ export const startRegistration = (
       type: 'Registration/start',
     });
 
-    fetch('http://localhost:8000/users', {
+    fetch('/users', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

@@ -23,7 +23,14 @@
     "react-rating": "^2.0.5",
     "react-scripts": "4.0.3",
     "semantic-ui-react": "^2.0.3",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,6 +41,9 @@
     "prettify": "prettier --write ./src",
     "dev": "nodemon server.js"
   },
+
+  "proxy": "http://localhost:8000",
+
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -46,19 +56,13 @@
       "not dead",
       "not op_mini all"
     ],
+
+
+
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.12",
-    "prettier": "^2.3.2",
-    "react-redux": "^7.2.4",
-    "react-router-dom": "^5.2.0",
-    "redux": "^4.1.0",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
   }
 }

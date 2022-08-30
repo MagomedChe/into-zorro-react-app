@@ -2,7 +2,7 @@ export const loadItems = () => {
   return (dispatch) => {
     dispatch({ type: 'cafe/load/start' });
 
-    fetch('http://localhost:8000/cafe')
+    fetch('/cafe')
       .then((response) => response.json())
       .then((json) => {
         dispatch({
@@ -18,7 +18,7 @@ export const postCafe = (title, address, photo) => {
     dispatch({
       type: 'postCafe/send/start',
     });
-    fetch('http://localhost:8000/cafe', {
+    fetch('/cafe', {
       method: 'POST',
       body: JSON.stringify({
         title: title,

@@ -9,14 +9,14 @@ function Likes(props) {
         onClick={() => props.setPositive(true)}
         style={props.positive ? { color: '#02b302' } : {}}
       >
-        <i className="fas fa-thumbs-up"></i>
+        <i className="fas fa-thumbs-up"/>
       </div>
       <div
         className={styles.dislike}
         onClick={() => props.setPositive(false)}
         style={props.positive === false ? { color: 'red' } : {}}
       >
-        <i className="fas fa-thumbs-down"></i>
+        <i className="fas fa-thumbs-down"/>
       </div>
     </div>
   );
