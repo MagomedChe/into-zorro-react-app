@@ -1,8 +1,10 @@
+import { serverUrl } from '../../../../serverUrl';
+
 export const loadItems = () => {
   return (dispatch) => {
     dispatch({ type: 'cafe/load/start' });
 
-    fetch('/cafe')
+    fetch(`${serverUrl}/cafe`)
       .then((response) => response.json())
       .then((json) => {
         dispatch({
@@ -18,7 +20,7 @@ export const postCafe = (title, address, photo) => {
     dispatch({
       type: 'postCafe/send/start',
     });
-    fetch('/cafe', {
+    fetch(`${serverUrl}/cafe`, {
       method: 'POST',
       body: JSON.stringify({
         title: title,

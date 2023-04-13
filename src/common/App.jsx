@@ -1,15 +1,23 @@
-import Header from './../Components/Header/Header';
-import Routes from '../Components/Content/Card/Routes';
-import Footer from '../Components/Footer/Footer';
-import styles from './Common.module.css';
+//library
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
+
+//components
+import Header from './../Components/Header/Header';
+import Index from '../Components/Content/Card';
+import Footer from '../Components/Footer/Footer';
+
+//actions Redux
 import { loadItems } from '../Components/Content/Card/CardItems/actions';
 import { loadAddress } from '../redux/addresessReducer/actions';
 import { loadBigImage } from '../redux/BigImageReducer/actions';
 import { loadContactInfo } from '../redux/ContactInfoReducer/actions';
 import { loadRatings } from '../redux/RatingReducer/actions';
 import { loadReviews } from '../Components/BlockReviews/actions';
+
+//styles
+import styles from './Common.module.scss';
 
 function App() {
   const dispatch = useDispatch();
@@ -26,7 +34,7 @@ function App() {
   return (
     <div className={styles.container}>
       <Header />
-      <Routes />
+      <Index />
       <Footer />
     </div>
   );

@@ -1,8 +1,9 @@
+import { serverUrl } from '../../serverUrl';
 export const loadRatings = () => {
   return (dispatch) => {
     dispatch({ type: 'rating/load/start' });
 
-    fetch('/Rating')
+    fetch(`${serverUrl}/Rating`)
       .then((response) => response.json())
       .then((json) => {
         dispatch({
@@ -18,7 +19,7 @@ export const postRating = (id, rating) => {
     dispatch({
       type: 'rating/send/start',
     });
-    fetch('/Rating', {
+    fetch(`${serverUrl}/Rating`, {
       method: 'POST',
       body: JSON.stringify({
         cafeId: id,

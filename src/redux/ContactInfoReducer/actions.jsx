@@ -1,8 +1,9 @@
+import { serverUrl } from '../../serverUrl';
 export const loadContactInfo = () => {
   return (dispatch) => {
     dispatch({ type: 'info/load/start' });
 
-    fetch('/ContactInfo')
+    fetch(`${serverUrl}/ContactInfo`)
       .then((response) => response.json())
       .then((json) => {
         dispatch({

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../../../common/Common.module.css';
+import styles from '../../../common/Common.module.scss';
 import { useDispatch } from 'react-redux';
 import { postCafe } from '../../Content/Card/CardItems/actions';
 import { NavLink } from 'react-router-dom';

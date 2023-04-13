@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import { Alert } from '@material-ui/lab';
 import Button from '@material-ui/core/Button';
-import { NavLink, Link, useHistory } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { startLogin } from '../../redux/RegAuthReducer/actions';
 import {
@@ -66,11 +66,9 @@ function Login() {
     return setShowPassword(!showPassword);
   };
 
-  let history = useHistory();
-
   const handleLogin = (e) => {
     e.preventDefault();
-    dispatch(startLogin(login, password, history));
+    dispatch(startLogin(login, password));
   };
 
   return (

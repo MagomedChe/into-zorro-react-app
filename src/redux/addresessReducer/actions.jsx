@@ -1,8 +1,9 @@
+import { serverUrl } from '../../serverUrl';
 export const loadAddress = () => {
   return (dispatch) => {
     dispatch({ type: 'addresses/load/start' });
 
-    fetch('/addresses')
+    fetch(`${serverUrl}/addresses`)
       .then((response) => response.json())
       .then((json) => {
         dispatch({

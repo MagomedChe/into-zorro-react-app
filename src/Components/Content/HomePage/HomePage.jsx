@@ -1,5 +1,8 @@
+//library
 import React from 'react';
 import { useSelector } from 'react-redux';
+
+//components
 import CardItems from '../Card/CardItems/CardItems';
 
 function HomePage(props) {

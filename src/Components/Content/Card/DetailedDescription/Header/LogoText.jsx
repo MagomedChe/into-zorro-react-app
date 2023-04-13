@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../../../common/Common.module.css';
+import styles from '../../../../../common/Common.module.scss';
 import logo from '../../../images/logo.jpg';
 
 function LogoText(props) {

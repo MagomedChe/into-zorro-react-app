@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../common/Common.module.css';
+import styles from '../../common/Common.module.scss';
 import logo from '../../logo/photo_2021-07-27_22-29-19.jpg';
 import { NavLink } from 'react-router-dom';
 

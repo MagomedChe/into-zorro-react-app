@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../../../common/Common.module.css';
+import styles from '../../../../../common/Common.module.scss';
 import image from '../../../images/image 8.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { postRating } from '../../../../../redux/RatingReducer/actions';

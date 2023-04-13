@@ -8,7 +8,7 @@ import ContactInfo from './ContactInfoReducer';
 import Rating from './RatingReducer';
 import reviewsReducer from '../Components/BlockReviews/reviewsReducer';
 import usersReducer from '../Components/BlockReviews/Users/usersReducer';
-import {auth} from "./RegAuthReducer/auth";
+import { auth } from './RegAuthReducer/auth';
 
 const logger = createLogger({
   diff: true,
@@ -23,7 +23,7 @@ const rootReducer = combineReducers({
   ratinges: Rating,
   reviews: reviewsReducer,
   users: usersReducer,
-  auth: auth
+  auth: auth,
 });
 
 const store = createStore(rootReducer, applyMiddleware(thunk, logger));

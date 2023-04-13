@@ -1,14 +1,11 @@
 import React from 'react';
-import styles from '../../common/Common.module.css';
+import styles from '../../common/Common.module.scss';
 
 function Footer(props) {
   return (
     <div className={styles.footer}>
       <div className={styles.company}>
-        <p>© 1999–2021 ООО «Компания Intocode». Все права защищены.</p>
-      </div>
-      <div className="team-developers">
-        <p>Над проектом работала команда 11.)</p>
+        <p>© 1999–2021 ООО «Компания Lincode». Все права защищены.</p>
       </div>
     </div>
   );

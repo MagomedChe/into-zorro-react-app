@@ -1,12 +1,17 @@
+//library
 import React from 'react';
-import styles from '../../../../../common/Common.module.css';
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+
+//components
 import Map from '../Header/Map';
 import ImageCafe from './ImageCafe';
 import InfoCafe from './InfoCafe';
 import LocationMap from './LocationMap';
-import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
 import Reviews from '../../../../BlockReviews';
+
+//styles
+import styles from '../../../../../common/Common.module.scss';
 
 function Content(props) {
   const location = useSelector((state) => state.addresses.addresses);

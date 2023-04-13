@@ -1,4 +1,4 @@
-export const addReview = (text, userId, id, positive,authUserId) => {
+export const addReview = (text, userId, id, positive, authUserId) => {
   return (dispatch) => {
     dispatch({ type: 'review/add/start' });
     fetch(`/reviews`, {

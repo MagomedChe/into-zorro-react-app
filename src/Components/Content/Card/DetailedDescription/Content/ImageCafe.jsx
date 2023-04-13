@@ -1,5 +1,8 @@
+//library
 import React from 'react';
-import styles from '../../../../../common/Common.module.css';
+
+//styles
+import styles from '../../../../../common/Common.module.scss';
 
 function ImageCafe(props) {
   return (

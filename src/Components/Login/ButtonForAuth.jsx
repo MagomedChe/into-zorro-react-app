@@ -14,7 +14,7 @@ import { Drawer, List, ListItem, Popover } from '@material-ui/core';
 import { AccountCircle, ExitToApp } from '@material-ui/icons';
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import Profile from './Profile';
-import styles from "../../common/Common.module.css";
+import styles from '../../common/Common.module.scss';
 
 const useStyle = makeStyles({
   button: {
@@ -168,7 +168,7 @@ function ButtonForAuth() {
               ))}
               <ListItem button>
                 <ListItemIcon className={classes.icon}>
-                  <AddBoxIcon/>
+                  <AddBoxIcon />
                 </ListItemIcon>
                 <NavLink className={styles.Href} exact to="/add-cafe">
                   <span>Добавить Заведение</span>

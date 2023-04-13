@@ -28,7 +28,7 @@ const reviewsReducer = (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        reviews: [...state.reviews, action.payload ],
+        reviews: [...state.reviews, action.payload],
       };
 
     default:

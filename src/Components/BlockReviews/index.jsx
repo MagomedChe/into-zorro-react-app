@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './styles.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import {Link, useParams} from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Review from './Review';
 import Form from './Form/Form';
 import Likes from './Likes';
@@ -48,23 +48,23 @@ function Reviews(props) {
 
   return (
     <div className={styles.reviewsContent}>
-      {authUser &&
-      (<div className={styles.reviewsFormButton}>
-        <Form text={text} setText={setText} />
-        <div className={styles.appraisal}>
-          <Likes setPositive={setPositive} positive={positive} />
+      {authUser && (
+        <div className={styles.reviewsFormButton}>
+          <Form text={text} setText={setText} />
+          <div className={styles.appraisal}>
+            <Likes setPositive={setPositive} positive={positive} />
+          </div>
+          <div>
+            <ButtonAddReview
+              positive={positive}
+              setPositive={setPositive}
+              text={text}
+              setText={setText}
+              id={id}
+            />
+          </div>
         </div>
-        <div>
-          <ButtonAddReview
-            positive={positive}
-            setPositive={setPositive}
-            text={text}
-            setText={setText}
-            id={id}
-          />
-        </div>
-      </div>)
-      }
+      )}
 
       <div>
         <AllAndPositiveButtons
@@ -78,10 +78,14 @@ function Reviews(props) {
             return <Review review={review} userId={userId} key={review.id} />;
           })}
         </div>
-        {!authUser && <div>
-          <Link to="/auth" style={{fontWeight:"bold", color:"black"}}>Войдите</Link>, чтобы оставить отзыв
-        </div>
-        }
+        {!authUser && (
+          <div>
+            <Link to="/auth" style={{ fontWeight: 'bold', color: 'black' }}>
+              Войдите
+            </Link>
+            , чтобы оставить отзыв
+          </div>
+        )}
       </div>
     </div>
   );

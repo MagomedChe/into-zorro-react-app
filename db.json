@@ -83,6 +83,61 @@
       "cafeId": 1,
       "rating": 4,
       "id": 8
+    },
+    {
+      "cafeId": 1,
+      "rating": 2,
+      "id": 9
+    },
+    {
+      "cafeId": 1,
+      "rating": 2,
+      "id": 10
+    },
+    {
+      "cafeId": 1,
+      "rating": 2,
+      "id": 11
+    },
+    {
+      "cafeId": 1,
+      "rating": 2,
+      "id": 12
+    },
+    {
+      "cafeId": 1,
+      "rating": 2,
+      "id": 13
+    },
+    {
+      "cafeId": 1,
+      "rating": 2,
+      "id": 14
+    },
+    {
+      "cafeId": 2,
+      "rating": 2,
+      "id": 15
+    },
+    {
+      "cafeId": 2,
+      "rating": 4,
+      "id": 16
+    },
+    {
+      "cafeId": 1,
+      "rating": 4,
+      "id": 17
+    },
+    {
+      "cafeId": 5,
+      "rating": 4,
+      "id": 18
+    },
+    {
+      "cafeId": 6,
+      "rating": 5,
+      "id": 19
     }
   ],
   "bigImages": [
